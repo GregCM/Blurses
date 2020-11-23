@@ -138,8 +138,7 @@ class Menu:
         elif key == curses.KEY_ENTER or key == 10: 
             return self.active
         elif key == ord('q'):
-            # Quit
-            return 3
+            return len(self.options) - 1
         return 0
             
 class Blurses:
